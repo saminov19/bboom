@@ -12,31 +12,31 @@ This is a Django web application that implements a simple blog, including user a
 
 1. Clone the repository to your local machine:
 
-markdown
-Copy code
+```
 git clone https://github.com/saminov19/django-blog-app.git
 cd django-blog-app
-
+```
 
 2. Install the required packages
 
 
 3. Apply the database migrations:
 
+```
 python manage.py migrate
-
+```
 
 4. Create a superuser (for admin access):
 
+```
 python manage.py createsuperuser
-
+```
 
 
 5. Run the development server:
-python manage.py runserver
 
-markdown
-Copy code
+```python manage.py runserver```
+
 
 The app will be accessible at `http://127.0.0.1:8000/`.
 
@@ -64,6 +64,7 @@ Please refer to the API section above for more details about each endpoint.
 ## Testing
 
 To run the unit tests for the app, use the following command:
-python manage.py test
+
+```python manage.py test```
 
 

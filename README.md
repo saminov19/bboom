@@ -14,7 +14,7 @@ This is a Django web application that implements a simple blog, including user a
 
 ```
 git clone https://github.com/saminov19/django-blog-app.git
-cd django-blog-app
+cd bboom
 ```
 
 2. Install the required packages

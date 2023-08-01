@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List</h1>
+    {% if users %}
+        <ul>
+            {% for user in users %}
+                <li>
+                    <p>Username: {{ user.username }}</p>
+                    <p>Email: {{ user.email }}</p>
+                </li>
+                <a href="{% url 'post_list' %}">User's posts</a>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>There are no users.</p>
+    {% endif %}
+    <p><a href="{% url 'register' %}">Register</a></p>
+    <p><a href="{% url 'login' %}">Login</a></p>
+</body>
+</html>

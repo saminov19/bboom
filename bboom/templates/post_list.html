@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post List</title>
+</head>
+<body>
+    <h1>Post List</h1>
+    <ul>
+        {% for post in posts %}
+        <li>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <p>Author: {{ post.user }}</p>
+        </li>
+        <a href="{% url 'delete_post' post.id %}">Delete post</a>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_post' %}">Add post</a>
+    <a href="{% url 'user_list' %}">User List</a>
+</body>
+</html>
